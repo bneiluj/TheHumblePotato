@@ -10,8 +10,8 @@ class App extends React.Component {
           <img src={logo} className="App-logo" alt="logo" />
           <p></p><p></p><p></p>
           <p>
-            <a data-v-0d4e4b2a="" href="/buy" class="btn btn-secondary btn-lg">
-                CONNECT
+            <a data-v-0d4e4b2a="" href="/target" class="btn btn-secondary btn-lg">
+                LOADING
             </a>
           </p>
 
