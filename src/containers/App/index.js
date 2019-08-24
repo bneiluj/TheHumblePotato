@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
+import TwitterLogin from 'react-twitter-auth';
 import './App.css';
 
 class App extends React.Component {
@@ -19,6 +20,20 @@ class App extends React.Component {
           >
             Learn React
           </a>
+          <TwitterLogin
+            loginUrl="https://api.twitter.com/oauth/"
+            onFailure={console.log}
+            onSuccess={console.log}
+            requestTokenUrl="http://127.0.0.1:8080/login"
+            credentials="include"
+            customHeaders={{
+              // "Access-Control-Allow-Origin": "*",
+              "Access-Control-Allow-Origin": "http://127.0.0.1:8080",
+              "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+              // "Access-Control-Expose-Headers": "X-My-Custom-Header",
+              'Access-Control-Allow-Methods': 'GET,PUT,POST,DELETE,OPTIONS'
+            }}
+          />
         </header>
       </div>
     );
