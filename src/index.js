@@ -2,6 +2,7 @@ import React from 'react';
 import { render } from 'react-dom';
 import './index.css';
 import App from './containers/App';
+import './index.scss';
 import * as serviceWorker from './serviceWorker';
 import { DrizzleProvider } from 'drizzle-react';
 import { ReactReduxContext } from "react-redux";

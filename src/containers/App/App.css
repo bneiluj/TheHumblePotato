@@ -3,9 +3,17 @@
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
+  /* animation: App-logo-spin infinite 20s linear; */
   height: 40vmin;
   pointer-events: none;
+  max-height: 150px;
+}
+
+.App-loading {
+  animation: App-loader-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+  max-height: 150px;
 }
 
 .App-header {
@@ -24,6 +32,16 @@
 }
 
 @keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+@keyframes App-loader-spin {
   from {
     transform: rotate(0deg);
   }
