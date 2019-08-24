@@ -1,10 +1,37 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { render } from 'react-dom';
 import './index.css';
 import App from './containers/App';
 import * as serviceWorker from './serviceWorker';
+import { DrizzleProvider } from 'drizzle-react';
+import { ReactReduxContext } from "react-redux";
+import CheckForWeb3Provider from './containers/CheckForWeb3Provider';
+import configureStore, { history } from "./store";
 
-ReactDOM.render(<App />, document.getElementById('root'));
+export const store = configureStore();
+
+// Import contracts
+// import SimpleStorage from './../build/contracts/SimpleStorage.json';
+
+const options = {
+  contracts: [
+    // SimpleStorage,
+  ]
+};
+
+const RootComponent = () => (
+  <>
+    {ReactReduxContext && <DrizzleProvider store={store} options={options} context={ReactReduxContext}>
+      <CheckForWeb3Provider>
+        <App context={ReactReduxContext} {...(history ? { history } : { })} />
+      </CheckForWeb3Provider>
+    </DrizzleProvider>}
+    {!ReactReduxContext && <div>Loading...</div>}
+  </>
+);
+
+const rootElement = document.getElementById("root");
+render(<RootComponent />, rootElement);
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
