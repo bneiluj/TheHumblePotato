@@ -33,21 +33,25 @@ class App extends React.Component {
       (
         <div>
           <p>Authenticated</p>
+          <header className="App-header">
+            <img src={logo} className="App-logo" alt="logo" />
+          </header>
         </div>
       ) :
       (
-        <TwitterLogin loginUrl="http://localhost:4000/api/v1/auth/twitter"
-                      onFailure={this.onFailed} onSuccess={this.onSuccess}
-                      requestTokenUrl="http://localhost:4000/api/v1/auth/twitter/reverse"/>
+        <div className="App">
+          <header className="App-header">
+            <TwitterLogin loginUrl="http://localhost:4000/api/v1/auth/twitter"
+                          onFailure={this.onFailed} onSuccess={this.onSuccess}
+                          requestTokenUrl="http://localhost:4000/api/v1/auth/twitter/reverse"/>
+          </header>
+       </div>
       );
 
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            {content}
-          </p>
+          {content}
         </header>
       </div>
     );
