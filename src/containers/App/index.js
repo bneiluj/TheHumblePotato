@@ -1,61 +1,59 @@
 import React from 'react';
-import logo from './logo.svg';
-import TwitterLogin from 'react-twitter-auth';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import Box from '3box';
+import PropTypes from 'prop-types';
+import { drizzleConnect } from 'drizzle-react';
+
+import Start from '../Start';
+import Target from '../Target';
+import TwitterAuth from '../TwitterAuth';
+import Pay from '../Pay';
+import Profile from '../Profile';
+
 import './App.css';
 
 class App extends React.Component {
+  async componentDidMount() {
+    const { accounts } = this.props;
 
-  constructor() {
-    super();
+    if (accounts.length === 0) {
+      throw new Error("No Ethereum web3 account found!");
+    }
 
-    this.state = { isAuthenticated: false, user: null, token: ''};
+    console.log(accounts);
+    const box = await Box.openBox(accounts[0], this.context.drizzle.web3);
+    console.log(box);
   }
-
-  onSuccess = (response) => {
-    const token = response.headers.get('x-auth-token');
-    response.json().then(user => {
-      if (token) {
-        this.setState({isAuthenticated: true, user: user, token: token});
-      }
-    });
-  };
-
-  onFailed = (error) => {
-    alert(error);
-  };
-
-  logout = () => {
-    this.setState({isAuthenticated: false, token: '', user: null})
-  };
-
   render() {
-    let content = !!this.state.isAuthenticated ?
-      (
-        <div>
-          <p>Authenticated</p>
-          <header className="App-header">
-            <img src={logo} className="App-logo" alt="logo" />
-          </header>
-        </div>
-      ) :
-      (
-        <div className="App">
-          <header className="App-header">
-            <TwitterLogin loginUrl="http://localhost:4000/api/v1/auth/twitter"
-                          onFailure={this.onFailed} onSuccess={this.onSuccess}
-                          requestTokenUrl="http://localhost:4000/api/v1/auth/twitter/reverse"/>
-          </header>
-       </div>
-      );
+    const { history } = this.props;
 
     return (
       <div className="App">
-        <header className="App-header">
-          {content}
-        </header>
+        <Router>
+          <header className="App-header">
+            <Link to="/target">Home</Link>
+            <Link to="/profile">Profile</Link>
+          </header>
+          <main className="App-main">
+            <Route exact path="/" component={Start} history={history} />
+            <Route path="/target" component={Target} />
+            <Route path="/twitter-auth" component={TwitterAuth} />
+            <Route path="/pay" component={Pay} />
+            <Route path="/profile" component={Profile} />
+          </main>
+        </Router>
       </div>
     );
   }
 }
 
-export default App;
+App.contextTypes = {
+  drizzle: PropTypes.object
+}
+
+export default drizzleConnect(
+  App,
+  state => ({
+    accounts: state.accounts
+  })
+);

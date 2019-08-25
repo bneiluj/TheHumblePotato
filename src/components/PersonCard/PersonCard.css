@@ -1,0 +1,20 @@
+.card {
+  border: white 1px solid;
+  color: black;
+  background-color: #666666!important;
+  justify-content: center!important;
+  align-items: center!important;
+  width: 18rem!important;
+  max-width: 80vh!important;
+}
+
+.card img {
+  border-radius: 256px!important;
+  width: 60%!important;
+  padding-top: 20px;
+}
+
+.card p {
+  margin-bottom: 0.2rem;
+  font-size: 0.8rem;
+}
