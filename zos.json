@@ -1,11 +1,14 @@
 {
   "zosversion": "2.2",
+  "name": "base-contract-project",
+  "version": "0.1.0",
   "contracts": {
-    "SimpleStorage": "SimpleStorage"
+    "Migrations": "Migrations",
+    "TokenMock": "TokenMock",
+    "MoneyMarket": "MoneyMarket",
+    "RealPoolManager": "RealPoolManager"
   },
   "dependencies": {},
-  "name": "project",
-  "version": "0.1.0",
   "compiler": {
     "manager": "truffle",
     "compilerSettings": {
