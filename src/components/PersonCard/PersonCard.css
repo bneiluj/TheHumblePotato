@@ -1,6 +1,7 @@
 .card {
   border: white 1px solid;
   color: black;
+  background-color: #666666!important;
   justify-content: center!important;
   align-items: center!important;
   width: 18rem!important;
@@ -9,7 +10,8 @@
 
 .card img {
   border-radius: 256px!important;
-  width: 90%!important;
+  width: 60%!important;
+  padding-top: 20px;
 }
 
 .card p {
