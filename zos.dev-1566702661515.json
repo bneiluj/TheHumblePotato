@@ -36,11 +36,5 @@
   "proxies": {},
   "zosversion": "2.2",
   "version": "0.1.0",
-  "dependencies": {
-    "openzeppelin-eth": {
-      "package": "0x392D8D83555E58ff5D79F193cb3d9783B6B243C8",
-      "version": "2.2.0",
-      "customDeploy": true
-    }
-  }
+  "dependencies": {}
 }

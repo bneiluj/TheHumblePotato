@@ -23,6 +23,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "ganacheModified": "./scripts/ganache.sh",
     "migrate": "truffle migrate --network local",
     "migrate-rinkeby": "truffle migrate --network rinkeby",
     "session": "zos session --from $ADMIN_ADDRESS --network local --expires 7200",
@@ -65,8 +66,6 @@
     "shelljs": "^0.8.3",
     "truffle-deploy-registry": "^0.5.0",
     "web3": "^1.0.0-beta.35",
-    "zos": "^2.2.3",
-    "zos-lib": "^2.2.1",
     "zos-truffle-merge": "^0.0.3"
   }
 }
