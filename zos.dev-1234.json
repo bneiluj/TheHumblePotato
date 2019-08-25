@@ -1,0 +1,52 @@
+{
+  "contracts": {
+    "SimpleStorage": {
+      "address": "0x9B4E23EE5baf13e2167e310f4f1F325d7e644526",
+      "constructorCode": "608060405234801561001057600080fd5b5061015b806100206000396000f3fe",
+      "bodyBytecodeHash": "fc291e06e4c4a4e4bfdbc0cb543a54e2fd189144c987c52b560c878fcf1d892b",
+      "localBytecodeHash": "3a9c2e63846975f3ad2c08bfd2efc688dccf8843c9e36889beb2a8682cc5bdcb",
+      "deployedBytecodeHash": "3a9c2e63846975f3ad2c08bfd2efc688dccf8843c9e36889beb2a8682cc5bdcb",
+      "types": {
+        "t_uint256": {
+          "id": "t_uint256",
+          "kind": "elementary",
+          "label": "uint256"
+        }
+      },
+      "storage": [
+        {
+          "contract": "SimpleStorage",
+          "path": "contracts/SimpleStorage.sol",
+          "label": "storedData",
+          "astId": 64,
+          "type": "t_uint256",
+          "src": "103:22:1"
+        }
+      ],
+      "warnings": {
+        "hasConstructor": false,
+        "hasSelfDestruct": false,
+        "hasDelegateCall": false,
+        "hasInitialValuesInDeclarations": false,
+        "uninitializedBaseContracts": []
+      }
+    }
+  },
+  "solidityLibs": {},
+  "proxies": {
+    "project/SimpleStorage": [
+      {
+        "address": "0xA66A616e92BCF890337E85F99F342D16C0c2a165",
+        "version": "0.1.0",
+        "implementation": "0x9B4E23EE5baf13e2167e310f4f1F325d7e644526",
+        "admin": "0xCCd0C2a5476aD58e81F025edAdD7188ebb699f90",
+        "kind": "Upgradeable"
+      }
+    ]
+  },
+  "zosversion": "2.2",
+  "version": "0.1.0",
+  "proxyAdmin": {
+    "address": "0xCCd0C2a5476aD58e81F025edAdD7188ebb699f90"
+  }
+}
