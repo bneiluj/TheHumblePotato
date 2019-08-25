@@ -29,6 +29,12 @@ class TwitterAuth extends React.Component {
     // Store the oauth fields into Redux
     setOAuthVerifier(oauth_verifier);
     setOAuthToken(oauth_token);
+
+    // Redirect to Pay page
+    const location = {
+      pathname: '/pay'
+    };
+    this.props.history.push(location);
   };
 
   onFailed = (error) => {

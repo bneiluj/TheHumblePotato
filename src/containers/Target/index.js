@@ -1,5 +1,6 @@
 import React from 'react';
 import './Target.css';
+import { Link } from "react-router-dom";
 import PersonCard from '../../components/PersonCard';
 import headshot from './headshot.jpg';
 
@@ -19,7 +20,9 @@ class Target extends React.Component {
           <PersonCard person={person} />
         </div>
         <div className="row" width="100%">
-        	<button className="mr-sm-3 mr-2 btn btn-secondary btn-sm">Participate</button>
+          <Link to="/twitter-auth">
+          	<button className="mr-sm-3 mr-2 btn btn-secondary btn-sm">Participate</button>
+          </Link>
     			<button className="mr-sm-3 mr-2 btn btn-secondary btn-sm">Donate</button>
         </div>
       </div>
