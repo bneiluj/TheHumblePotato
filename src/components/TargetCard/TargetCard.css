@@ -1,0 +1,13 @@
+.card {
+  border: white 1px solid;
+  color: black;
+  justify-content: center!important;
+  align-items: center!important;
+  width: 18rem!important;
+  max-width: 80vh!important;
+}
+
+.card img {
+  border-radius: 256px!important;
+  width: 90%!important;
+}
