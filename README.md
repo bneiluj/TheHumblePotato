@@ -28,7 +28,6 @@ Start `ganache-cli`:
 ganache-cli -l 8000038 -i 1234 -e 100000 -a 10 -u 0 -g 1000000000 -m "$HDWALLET_MNEMONIC"
 ```
 
-
 `npm install`
 `npm script session`
 `npm script push`
@@ -38,14 +37,5 @@ ganache-cli -l 8000038 -i 1234 -e 100000 -a 10 -u 0 -g 1000000000 -m "$HDWALLET_
 
 `npm start`
 
-# Resource
-https://docs.google.com/document/d/1GjioxctPf_9qHwLdsV9ZuAv5mj_Jc0ACjhSAJebtI8A/edit
-
-# Use
-- chainlink
-- 3box
-- DAO
-- social impact
-- The graph
-- Raiden
-- MakerDAO
+# Interact with the Pool
+`npx truffle console --network local`

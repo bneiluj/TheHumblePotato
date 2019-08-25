@@ -53,19 +53,21 @@
   },
   "devDependencies": {
     "bootstrap": "^4.3",
-    "jquery": "^3.4.1",
-    "path": "^0.12.7",
-    "popper.js": "^1.15.0",
-    "truffle-hdwallet-provider": "^1.0.17",
     "chalk": "^2.4.2",
     "eth-gas-reporter": "^0.2.0",
     "ethers": "^4.0.26",
     "ganache-cli": "^6.4.3",
+    "jquery": "^3.4.1",
     "openzeppelin-eth": "^2.1.3",
+    "path": "^0.12.7",
     "pooltogether-contracts": "pooltogether/pooltogether-contracts",
+    "popper.js": "^1.15.0",
     "shelljs": "^0.8.3",
     "truffle-deploy-registry": "^0.5.0",
+    "truffle-hdwallet-provider": "^1.0.17",
     "web3": "^1.0.0-beta.35",
+    "zos": "^2.4.2",
+    "zos-lib": "^2.4.2",
     "zos-truffle-merge": "^0.0.3"
   }
 }
