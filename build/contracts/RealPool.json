@@ -1,0 +1,835 @@
+{
+  "contractName": "RealPool",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_secretHash",
+          "type": "bytes32"
+        }
+      ],
+      "name": "lock",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function",
+      "signature": "0x01670ba9"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "entryCount",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function",
+      "signature": "0x0cbb0f83"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "allowLockAnytime",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function",
+      "signature": "0x111c1760"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "supplyRateMantissa",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function",
+      "signature": "0x1d1065d5"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "withdraw",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function",
+      "signature": "0x3ccfd60b"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_countNonFixed",
+          "type": "int256"
+        }
+      ],
+      "name": "buyTickets",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function",
+      "signature": "0x4fd43b3f"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getInfo",
+      "outputs": [
+        {
+          "name": "entryTotal",
+          "type": "int256"
+        },
+        {
+          "name": "startBlock",
+          "type": "uint256"
+        },
+        {
+          "name": "endBlock",
+          "type": "uint256"
+        },
+        {
+          "name": "poolState",
+          "type": "uint8"
+        },
+        {
+          "name": "winner",
+          "type": "address"
+        },
+        {
+          "name": "supplyBalanceTotal",
+          "type": "int256"
+        },
+        {
+          "name": "ticketCost",
+          "type": "int256"
+        },
+        {
+          "name": "participantCount",
+          "type": "uint256"
+        },
+        {
+          "name": "maxPoolSize",
+          "type": "int256"
+        },
+        {
+          "name": "estimatedInterestFixedPoint18",
+          "type": "int256"
+        },
+        {
+          "name": "hashOfSecret",
+          "type": "bytes32"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function",
+      "signature": "0x5a9b0b89"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "SUM_TREE_KEY",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function",
+      "signature": "0x62afd4b0"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "feeAmount",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function",
+      "signature": "0x69e15404"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_addr",
+          "type": "address"
+        }
+      ],
+      "name": "balanceOf",
+      "outputs": [
+        {
+          "name": "",
+          "type": "int256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function",
+      "signature": "0x70a08231"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "renounceOwnership",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function",
+      "signature": "0x715018a6"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_addr",
+          "type": "address"
+        }
+      ],
+      "name": "getEntry",
+      "outputs": [
+        {
+          "name": "addr",
+          "type": "address"
+        },
+        {
+          "name": "amount",
+          "type": "int256"
+        },
+        {
+          "name": "ticketCount",
+          "type": "uint256"
+        },
+        {
+          "name": "withdrawn",
+          "type": "int256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function",
+      "signature": "0x7db6a4e4"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_secret",
+          "type": "bytes32"
+        }
+      ],
+      "name": "complete",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function",
+      "signature": "0x83ccfb84"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "netWinnings",
+      "outputs": [
+        {
+          "name": "",
+          "type": "int256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function",
+      "signature": "0x862f2547"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function",
+      "signature": "0x8da5cb5b"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "isOwner",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function",
+      "signature": "0x8f32d59b"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "currentInterestFractionFixedPoint24",
+      "outputs": [
+        {
+          "name": "",
+          "type": "int256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function",
+      "signature": "0x9cd42401"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "unlock",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function",
+      "signature": "0xa69df4b5"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "state",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint8"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function",
+      "signature": "0xc19d93fb"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "sender",
+          "type": "address"
+        }
+      ],
+      "name": "initialize",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function",
+      "signature": "0xc4d66de8"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "randomToken",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function",
+      "signature": "0xd1472d31"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "moneyMarket",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function",
+      "signature": "0xd6d75f51"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_maxValueFixedPoint24",
+          "type": "int256"
+        }
+      ],
+      "name": "maxPoolSizeFixedPoint24",
+      "outputs": [
+        {
+          "name": "",
+          "type": "int256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function",
+      "signature": "0xe4db53e9"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_addr",
+          "type": "address"
+        }
+      ],
+      "name": "winnings",
+      "outputs": [
+        {
+          "name": "",
+          "type": "int256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function",
+      "signature": "0xea3a1499"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "winnerAddress",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function",
+      "signature": "0xed7a4e0b"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "transferOwnership",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function",
+      "signature": "0xf2fde38b"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "token",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function",
+      "signature": "0xfc0c546a"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "sender",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "count",
+          "type": "int256"
+        },
+        {
+          "indexed": false,
+          "name": "totalPrice",
+          "type": "uint256"
+        }
+      ],
+      "name": "BoughtTickets",
+      "type": "event",
+      "signature": "0xbae340cbbad65e770c316b0667f457021a64c3d9bd20aa1361bf0f9ca3ef459e"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "sender",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "amount",
+          "type": "int256"
+        }
+      ],
+      "name": "Withdrawn",
+      "type": "event",
+      "signature": "0x6feafc3039dc558ee6f547c450318c2e74b8844cacf0f75c0f33df7360ba7b6e"
+    },
+    {
+      "anonymous": false,
+      "inputs": [],
+      "name": "PoolLocked",
+      "type": "event",
+      "signature": "0x2e136745550967f28b779ce8c395ca060a2f844edfb5b06631fe677f66f9e305"
+    },
+    {
+      "anonymous": false,
+      "inputs": [],
+      "name": "PoolUnlocked",
+      "type": "event",
+      "signature": "0xde17ec5ba6f9b5379a238e2a199366faccaedccf87879284014517333da74e26"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "winner",
+          "type": "address"
+        }
+      ],
+      "name": "PoolComplete",
+      "type": "event",
+      "signature": "0xb98509dde65aa654acedd81f9f27d9ad527e073af1e5632191e0594bfe44b272"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "previousOwner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "OwnershipTransferred",
+      "type": "event",
+      "signature": "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "pragma solidity ^0.5.0;\n\nimport \"pooltogether-contracts/contracts/Pool.sol\";\n\ncontract RealPool is Pool {}\n",
+  "sourcePath": "/Users/julien/Projects/tmp/pooltogether-contracts-mock-v1/contracts/RealPool.sol",
+  "ast": {
+    "absolutePath": "/Users/julien/Projects/tmp/pooltogether-contracts-mock-v1/contracts/RealPool.sol",
+    "exportedSymbols": {
+      "RealPool": [
+        54
+      ]
+    },
+    "id": 55,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 50,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:2"
+      },
+      {
+        "absolutePath": "pooltogether-contracts/contracts/Pool.sol",
+        "file": "pooltogether-contracts/contracts/Pool.sol",
+        "id": 51,
+        "nodeType": "ImportDirective",
+        "scope": 55,
+        "sourceUnit": 3629,
+        "src": "25:51:2",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 52,
+              "name": "Pool",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 3628,
+              "src": "99:4:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Pool_$3628",
+                "typeString": "contract Pool"
+              }
+            },
+            "id": 53,
+            "nodeType": "InheritanceSpecifier",
+            "src": "99:4:2"
+          }
+        ],
+        "contractDependencies": [
+          1931,
+          3628,
+          4350
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 54,
+        "linearizedBaseContracts": [
+          54,
+          3628,
+          1931,
+          4350
+        ],
+        "name": "RealPool",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 55,
+        "src": "78:28:2"
+      }
+    ],
+    "src": "0:107:2"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/julien/Projects/tmp/pooltogether-contracts-mock-v1/contracts/RealPool.sol",
+    "exportedSymbols": {
+      "RealPool": [
+        54
+      ]
+    },
+    "id": 55,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 50,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:2"
+      },
+      {
+        "absolutePath": "pooltogether-contracts/contracts/Pool.sol",
+        "file": "pooltogether-contracts/contracts/Pool.sol",
+        "id": 51,
+        "nodeType": "ImportDirective",
+        "scope": 55,
+        "sourceUnit": 3629,
+        "src": "25:51:2",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 52,
+              "name": "Pool",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 3628,
+              "src": "99:4:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Pool_$3628",
+                "typeString": "contract Pool"
+              }
+            },
+            "id": 53,
+            "nodeType": "InheritanceSpecifier",
+            "src": "99:4:2"
+          }
+        ],
+        "contractDependencies": [
+          1931,
+          3628,
+          4350
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 54,
+        "linearizedBaseContracts": [
+          54,
+          3628,
+          1931,
+          4350
+        ],
+        "name": "RealPool",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 55,
+        "src": "78:28:2"
+      }
+    ],
+    "src": "0:107:2"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.0+commit.1d4f565a.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.2",
+  "updatedAt": "2019-08-25T01:51:03.329Z",
+  "devdoc": {
+    "methods": {
+      "balanceOf(address)": {
+        "return": "The users's current balance."
+      },
+      "buyTickets(int256)": {
+        "params": {
+          "_countNonFixed": "The number of tickets the user wishes to buy."
+        }
+      },
+      "currentInterestFractionFixedPoint24()": {
+        "return": "The current estimated effective interest rate"
+      },
+      "feeAmount()": {
+        "return": "The fee for the pool to be transferred to the owner"
+      },
+      "getEntry(address)": {
+        "return": "Returns a tuple containing:   addr (the address of the user)   amount (the amount they deposited)   ticketCount (the number of tickets they have bought)   withdrawn (the amount they have withdrawn)"
+      },
+      "getInfo()": {
+        "return": "A tuple containing:   entryTotal (the total of all deposits)   startBlock (the block after which the pool can be locked)   endBlock (the block after which the pool can be unlocked)   poolState (either OPEN, LOCKED, COMPLETE)   winner (the address of the winner)   supplyBalanceTotal (the total deposits plus any interest from Compound)   ticketCost (the cost of each ticket in DAI)   participantCount (the number of unique purchasers of tickets)   maxPoolSize (the maximum theoretical size of the pool to prevent overflow)   estimatedInterestFixedPoint18 (the estimated total interest percent for this pool)   hashOfSecret (the hash of the secret the owner submitted upon locking)"
+      },
+      "initialize(address)": {
+        "details": "The Ownable constructor sets the original `owner` of the contract to the sender account."
+      },
+      "isOwner()": {
+        "return": "true if `msg.sender` is the owner of the contract."
+      },
+      "maxPoolSizeFixedPoint24(int256)": {
+        "details": "poolSize = totalDeposits + totalDeposits * interest => totalDeposits = poolSize / (1 + interest)",
+        "return": "The maximum size of the pool to be deposited into the money market"
+      },
+      "netWinnings()": {
+        "return": "The total interest on the pool less the fee as a whole number"
+      },
+      "owner()": {
+        "return": "the address of the owner."
+      },
+      "randomToken()": {
+        "return": "If the current block is before the end it returns 0, otherwise it returns the random number."
+      },
+      "renounceOwnership()": {
+        "details": "Allows the current owner to relinquish control of the contract."
+      },
+      "supplyRateMantissa()": {
+        "return": "The money market supply rate per block"
+      },
+      "transferOwnership(address)": {
+        "details": "Allows the current owner to transfer control of the contract to a newOwner.",
+        "params": {
+          "newOwner": "The address to transfer ownership to."
+        }
+      },
+      "winnerAddress()": {
+        "return": "The winner's address"
+      },
+      "winnings(address)": {
+        "params": {
+          "_addr": "The address of the user"
+        }
+      }
+    }
+  },
+  "userdoc": {
+    "methods": {
+      "balanceOf(address)": {
+        "notice": "Calculates a user's remaining balance.  This is their winnings less how much they've withdrawn."
+      },
+      "buyTickets(int256)": {
+        "notice": "Buys a pool ticket.  Only possible while the Pool is in the \"open\" state.  The user can buy any number of tickets.  Each ticket is a chance at winning."
+      },
+      "complete(bytes32)": {
+        "notice": "Withdraws the deposit from Compound and selects a winner. Can only be called by the owner after the lock end block. Fires the PoolUnlocked event."
+      },
+      "currentInterestFractionFixedPoint24()": {
+        "notice": "Estimates the current effective interest rate using the money market's current supplyRateMantissa and the lock duration in blocks."
+      },
+      "feeAmount()": {
+        "notice": "Calculates the size of the fee based on the gross winnings"
+      },
+      "getEntry(address)": {
+        "notice": "Retrieves information about a user's entry in the Pool."
+      },
+      "getInfo()": {
+        "notice": "Retrieves information about the pool."
+      },
+      "lock(bytes32)": {
+        "notice": "Pools the deposits and supplies them to Compound. Can only be called by the owner when the pool is open. Fires the PoolLocked event."
+      },
+      "maxPoolSizeFixedPoint24(int256)": {
+        "notice": "Calculates the maximum pool size so that it doesn't overflow after earning interest"
+      },
+      "netWinnings()": {
+        "notice": "Returns the total interest on the pool less the fee as a whole number"
+      },
+      "randomToken()": {
+        "notice": "Selects a random number in the range from [0, total tokens deposited)"
+      },
+      "renounceOwnership()": {
+        "notice": "Renouncing to ownership will leave the contract without an owner. It will not be possible to call the functions with the `onlyOwner` modifier anymore."
+      },
+      "supplyRateMantissa()": {
+        "notice": "Extracts the supplyRateMantissa value from the money market contract"
+      },
+      "winnerAddress()": {
+        "notice": "Selects and returns the winner's address"
+      },
+      "winnings(address)": {
+        "notice": "Calculates a user's winnings.  This is their deposit plus their winnings, if any."
+      },
+      "withdraw()": {
+        "notice": "Transfers a users deposit, and potential winnings, back to them. The Pool must be unlocked. The user must have deposited funds.  Fires the Withdrawn event."
+      }
+    }
+  }
+}
