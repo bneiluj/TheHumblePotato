@@ -7,12 +7,9 @@ function TargetCard(props) {
     <div className="card">
       <img src={headshot} className="card-img-top" />
       <div className="card-body">
-
-
-        <h5 className="card-title">{props.target.name}</h5>
-        <p className="card-text">{props.target.followers} Followers</p>
-        <p className="card-text">Relief Donation: ${props.target.pot}</p>
-        {/*<a href="#" className="btn btn-primary">Go somewhere</a>*/}
+        <p className="card-text"><h6>{props.target.followers} Followers</h6></p>
+        <p className="card-text"><h6>Relief Donation: ${props.target.pot}</h6></p>
+        <button className="btn btn-secondary btn-xsm" disabled><h6>{props.target.name}</h6></button>
 	    </div>
     </div>
   );
