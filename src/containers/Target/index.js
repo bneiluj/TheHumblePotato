@@ -13,7 +13,7 @@ class Target extends React.Component {
 
     return (
       <div className="Target">
-        <div className="row">
+        <div className="row Target-card">
           <TargetCard target={target} />
         </div>
         <div className="row" width="100%">
