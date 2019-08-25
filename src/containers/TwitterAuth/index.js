@@ -56,7 +56,7 @@ class TwitterAuth extends React.Component {
   }
 }
 
-TwitterAuth.contextTypes = {
+TwitterAuth.propTypes = {
   oAuthVerifier: PropTypes.string,
   oAuthToken: PropTypes.string,
   setOAuthVerifier: PropTypes.func,
