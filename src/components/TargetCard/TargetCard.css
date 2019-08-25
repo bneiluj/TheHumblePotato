@@ -1,8 +1,8 @@
-.TargetCard {
-  border: white 1px solid;
+.card {
+	border: white 1px solid;
 }
 
-.TargetCard img {
+img {
 	width: 175px;
 	border-radius: 90px;
 	margin: 15px 0 15px 0;

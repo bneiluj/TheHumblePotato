@@ -4,11 +4,13 @@ import headshot from './headshot.jpg';
 
 function TargetCard(props) {
   return (
-    <div className="TargetCard col-md-4 col-md-offset-4">
-      <img src={headshot} />
-      <p>{props.target.followers} Followers</p>
-      <p>Relief Donation: ${props.target.pot}</p>
-      <h3>{props.target.name}</h3>
+    <div className="card">
+      <img src={headshot} className="card-img-top" />
+      <div className="card-body">
+	      <p className="card-text">{props.target.followers} Followers</p>
+	      <p className="card-text">Relief Donation: ${props.target.pot}</p>
+	      <h2 className="card-title">{props.target.name}</h2>
+	    </div>
     </div>
   );
 }
