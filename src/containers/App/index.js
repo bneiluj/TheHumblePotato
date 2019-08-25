@@ -22,7 +22,7 @@ class App extends React.Component {
 
     console.log(accounts);
     const box = await Box.openBox(accounts[0], this.context.drizzle.web3);
-    // console.log(box);
+    console.log(box);
   }
   render() {
     const { history } = this.props;

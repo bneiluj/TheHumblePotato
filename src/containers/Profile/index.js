@@ -1,35 +1,42 @@
 import React from 'react';
 import './Profile.css';
 import { drizzleConnect } from 'drizzle-react';
-// import { bindActionCreators } from "redux";
+import { bindActionCreators } from "redux";
 import PropTypes from 'prop-types';
-import TargetCard from '../../components/TargetCard';
-// import * as 3boxActions from "../../actions/3box";
+import PersonCard from '../../components/PersonCard';
+import * as treeBoxActions from "../../actions/3box";
 import Box from '3box';
+import potato from './potato.png';
 
 class Profile extends React.Component {
   async componentDidMount() {
-    const { accounts } = this.props;
+    const { accounts, setProfile } = this.props;
 
     if (accounts.length === 0) {
       throw new Error("No Ethereum web3 account found!");
     }
 
     const profile = await Box.getProfile(accounts[0]);
-    console.log(profile);
+    setProfile(profile);
   }
   render() {
-    let target = {
-      'name': 'Emin Gün Sirer',
-      'followers': '75,823',
-      'pot': '5,495',
-      'number': '18'
+    const { profile } = this.props;
+
+    let person = {
+      'name': profile.name,
+      'description': profile.description,
+      'location': profile.location,
+      'twitter': !!profile.proof_twitter,
+      'email': !!profile.proof_email,
+      'github': !!profile.proof_github,
+      'eth': !!profile.proof_did,
+      'picture': (profile.image && profile.image.length > 0) ? ('https://ipfs.infura.io/ipfs/' + profile.image[0].contentUrl["/"]) : potato
     };
 
     return (
       <div className="Profile">
         <div>
-          <TargetCard target={target} />
+          <PersonCard person={person} />
         </div>
       </div>
     );
@@ -44,9 +51,10 @@ Profile.propTypes = {
 export default drizzleConnect(
   Profile,
   state => ({
-    accounts: state.accounts
+    accounts: state.accounts,
+    profile: state.threeBox.profile
   }),
-  // dispatch => ({
-  //   setOAuthVerifier: bindActionCreators(twitterActions.setOAuthVerifier, dispatch)
-  // })
+  dispatch => ({
+    setProfile: bindActionCreators(treeBoxActions.setProfile, dispatch)
+  })
 );

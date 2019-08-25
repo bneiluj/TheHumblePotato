@@ -10,6 +10,10 @@
 
 .card img {
   border-radius: 256px!important;
-  width: 60%!important;
-  padding-top: 20px;
+  width: 90%!important;
+}
+
+.card p {
+  margin-bottom: 0.2rem;
+  font-size: 0.8rem;
 }
