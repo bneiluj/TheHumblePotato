@@ -1,8 +1,8 @@
 import { connectRouter } from "connected-react-router";
-import exampleReducer from "./example";
+import twitterReducer from "./twitter";
 
 export default history => ({
-  example: exampleReducer,
+  twitter: twitterReducer,
   ...(
     history
     && { router: connectRouter(history) }

@@ -1,0 +1,26 @@
+.Start {
+  text-align: center;
+}
+
+.Start-potato {
+  /* animation: Start-logo-spin infinite 20s linear; */
+  height: 40vmin;
+  pointer-events: none;
+  max-height: 150px;
+}
+
+.Start-header {
+  background-color: #282c34;
+  padding-bottom: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.Start-loader {
+  display: inline-block;
+  width: 50px;
+}
