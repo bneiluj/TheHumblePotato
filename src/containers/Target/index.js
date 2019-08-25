@@ -13,8 +13,12 @@ class Target extends React.Component {
 
     return (
       <div className="Target">
-        <div>
+        <div className="row">
           <TargetCard target={target} />
+        </div>
+        <div className="row" width="100%">
+        	<button className="mr-sm-3 mr-2 btn btn-secondary btn-lg">Participate</button>
+    			<button className="mr-sm-3 mr-2 btn btn-secondary btn-lg">Donate</button>
         </div>
       </div>
     );
