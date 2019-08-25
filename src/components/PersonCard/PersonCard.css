@@ -13,3 +13,8 @@
   width: 60%!important;
   padding-top: 20px;
 }
+
+.card p {
+  margin-bottom: 0.2rem;
+  font-size: 0.8rem;
+}
