@@ -32,14 +32,9 @@ class App extends React.Component {
         <Router>
           <nav className="App-header">
             <div className="col-md-6">
-              <div className="nav-title">
-               <a href="/target"><span className="h1-box">The Humble Potato</span></a>
-              </div>
             </div>
-            <div className="col-md-6 nav-links">
-              <Link to="/target">Home</Link>
-              <Link to="/profile">Profile</Link>
-              <Link to="/pay">Join</Link>
+            <div className="col-md-6">
+              <button className="mr-sm-3 mr-2 btn btn-primary btn-sm" to="/profile">Profile</button>
             </div>
           </nav>
           <main className="App-main">
