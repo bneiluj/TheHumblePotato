@@ -1,4 +1,4 @@
-# 🥔 The Humble Potato 🥔
+# The Humble Potato 🥔
 
 The Thot Leader Dividend. 🤑
 
