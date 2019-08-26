@@ -1,6 +1,8 @@
-# The Humble Potato
+# 🥔 The Humble Potato 🥔
 
-The Thot Leader Dividend. BETTER YIELD THAN COMPOUND 💰 `http://compound.finance`
+The Thot Leader Dividend. 🤑
+
+💸 BETTER INTEREST THAN COMPOUND FINANCE 💰
 
 `The Humble Potato passes hands as thought leaders pass off the burden of paying for their thoughtlessness.`
 
