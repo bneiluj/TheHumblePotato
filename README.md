@@ -2,7 +2,7 @@
 
 The Thot Leader Dividend. 🤑
 
-💸 BETTER INTEREST THAN COMPOUND FINANCE 💰
+💸 BETTER INTERESTS THAN COMPOUND FINANCE 💰
 
 `The Humble Potato passes hands as thought leaders pass off the burden of paying for their thoughtlessness.`
 
