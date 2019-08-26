@@ -5,7 +5,7 @@ The Thot Leader Dividend. 🤑
 💸 BETTER INTEREST THAN COMPOUND FINANCE 💰
 
 <p align="center">
-  <img width="800px" src="https://github.com/bneiluj/TheHumblePotato/blob/master/public/assets/theHumblePotato.png" />
+  <img width="1000px" src="https://github.com/bneiluj/TheHumblePotato/blob/master/public/assets/theHumblePotato.png" />
 </p>
 
 Context: https://devpost.com/software/the-humble-potato-xd4bf5
