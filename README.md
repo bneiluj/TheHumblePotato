@@ -41,6 +41,8 @@ The Humble Potato passes hands as thought leaders pass off the burden of paying 
 
 2. Customer service: People can subscibe to `Customer Service`.  It's a monthly membership (0.1% of your total number of followers) to get notified by `Whatsapp`, `Telegram` or `Phone Number`.
 
+3. Rewards: A bunch of different NFT will be distributed to the `Hamblee` and Lottery participants. For example, `The Humiliation Badge`, `The Suffering Badge`, `The Fastest Looser` etc...
+
 ## What it does
 The Potato DAO aligns the incentives of the community to help “thought leaders” avoid destructive social media behavior and reward content that builds the community’s collective knowledge.
 
