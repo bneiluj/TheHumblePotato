@@ -1,6 +1,8 @@
 # The Humble Potato
 
-The Thot Leader Dividend
+The Thot Leader Dividend. 
+
+`The Humble Potato passes hands as thought leaders pass off the burden of paying for their thoughtlessness.`
 
 <p align="center">
   <img width="400px" src="https://github.com/bneiluj/TheHumblePotato/blob/master/public/assets/theHumblePotato.png" />
