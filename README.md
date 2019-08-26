@@ -39,7 +39,7 @@ The Ethereum (as well as greater blockchain community) is overrun with nonsubsta
 
 2. Customer service: Users subscibe to `Customer Service`.  It's a monthly membership (`0.1%` fee of your total followers) where users get notified by `Whatsapp`, `Telegram` or `Phone`.
 
-3. Rewards: A bunch of different NFT will be distributed to `Humblees` and Lottery participants. For example, `The Humiliation Badge`, `The Suffering Badge`, `The Fastest Looser` etc...
+3. Rewards: A bunch of different NFT will be distributed to `Humblees` and Lottery participants. For example, `The Humiliation Badge`, `The Suffering Badge`, `The Fastest Looser Badge` etc...
 
 ## What it does
 The Potato DAO aligns the incentives of the community to help “thought leaders” avoid destructive social media behavior and reward content that builds the community’s collective knowledge.
