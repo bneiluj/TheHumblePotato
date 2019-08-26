@@ -36,7 +36,7 @@ The Blockchain / Crypto space is overrun with nonsubstantive trolling, and there
 
 1. *Insurance scheme*: Users subscribe to an `Insurance scheme`. It's a monthly membership (`0.5%` fee of your total followers) to avoid receiving the `The Humble Potato`.
 
-2. *Customer service*: Users subscibe to `Customer Service`.  It's a monthly membership (`0.1%` fee of your total followers) where users get notified by `Whatsapp`, `Telegram` or `Phone`.
+2. *Customer service*: Users subscibe to `Customer Service`.  It's a monthly membership (`0.1%` fee of your total followers) where users get notified by `Whatsapp`, `Telegram` or `Phone` as soon as they get targeted by The Humble Potato so that they have time to pay the `Ransom` (donate) into the pool and avoid the `Suffering Period`. 
 
 3. *Rewards*: A bunch of different NFT will be distributed to `Humblees` and Lottery participants. For example, `The Humiliation Badge`, `The Suffering Badge`, `The Fastest Looser Badge` etc...
 
