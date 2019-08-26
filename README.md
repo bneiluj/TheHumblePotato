@@ -4,8 +4,6 @@ The Thot Leader Dividend. 🤑
 
 💸 BETTER INTEREST THAN COMPOUND FINANCE 💰
 
-`The Humble Potato passes hands as thought leaders pass off the burden of paying for their thoughtlessness.`
-
 <p align="center">
   <img width="400px" src="https://github.com/bneiluj/TheHumblePotato/blob/master/public/assets/theHumblePotato.png" />
 </p>
@@ -15,7 +13,7 @@ Context: https://devpost.com/software/the-humble-potato-xd4bf5
 # Recap
 
 ## Inspiration
-The Ethereum (as well as greater blockchain community) is overrun with nonsubstantive trolling, and there is no place where this is more evident than Twitter. We setout to solve this problem via a Universal Basic Income-style economic incentive we call the “Thought Leader Dividend”, administered via a DAO.
+The Blockchain / Crypto space is overrun with nonsubstantive trolling, and there is no place where this is more evident than Twitter. The Humble Potato passes hands as thought leaders pass off the burden of paying for their thoughtlessness. When The Humble Potato is hot, you pass it on. Fast. Or You Loose Followers.
 
 ### Quick workflow
 
