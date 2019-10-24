@@ -30,10 +30,18 @@ class App extends React.Component {
     return (
       <div className="App">
         <Router>
-          <header className="App-header">
-            <Link to="/target">Home</Link>
-            <Link to="/profile">Profile</Link>
-          </header>
+          <nav className="App-header">
+            <div className="col-md-6">
+              <div className="nav-title">
+               <a href="/target"><span className="h1-box">The Humble Potato</span></a>
+              </div>
+            </div>
+            <div className="col-md-6 nav-links">
+              <Link to="/target">Home</Link>
+              <Link to="/profile">Profile</Link>
+              <Link to="/pay">Join</Link>
+            </div>
+          </nav>
           <main className="App-main">
             <Route exact path="/" component={Start} history={history} />
             <Route path="/target" component={Target} />
