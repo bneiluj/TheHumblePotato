@@ -30,10 +30,13 @@ class App extends React.Component {
     return (
       <div className="App">
         <Router>
-          <header className="App-header">
-            <Link to="/target">Home</Link>
-            <Link to="/profile">Profile</Link>
-          </header>
+          <nav className="App-header">
+            <div className="col-md-6">
+            </div>
+            <div className="col-md-6">
+              <button className="mr-sm-3 mr-2 btn btn-primary btn-sm" to="/profile">Profile</button>
+            </div>
+          </nav>
           <main className="App-main">
             <Route exact path="/" component={Start} history={history} />
             <Route path="/target" component={Target} />
